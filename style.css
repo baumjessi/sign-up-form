@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    background-image: url(images/cat-coffee-medium.jpg);
+    background-size: cover;
+}
+
+h1 {
+    font-family: system-ui, sans-serif;
+    font-weight: 300px;
+    color: white;
+}
+
+.logo-overlay {
+    width: 600px;
+    display: flex;
+}
+
+.logo-overlay h1 {
+    position: center;
+    background-color: white;
+    justify-content: center;
+    height: 3rem;
+}
+
+.signup-body {
+    background-color: white;
+    width: 60%;
+    height: 100vh;
+    padding: 2rem;
+}
+
+.signup-body p {
+   font-family: system-ui, sans-serif;
+   font-size: 2rem;
+}
+
+.signup-body .p1 {
+    font-weight: 600;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+label {
+   font-family: system-ui, sans-serif;
+   font-weight: 700;
+   font-size: 0.5 rem; 
+   font-kerning: normal;
+   text-transform: uppercase;
+   color: #6f5d51;
+}
+
+input {
+    display: block;
+}
+
+button {
+    background-color: #6f5d51;
+    color: white;
+    font-family: system-ui, sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    padding: 2rem;
+    margin: 2rem;
+    box-shadow: 5px 5px;
+}
