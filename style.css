@@ -1,32 +1,63 @@
+@font-face {
+    src: url(fonts/cat_paw-webfont.woff);
+    font-family: 'Cat Paw';
+}
+
 body {
     display: flex;
     background-image: url(images/cat-coffee-medium.jpg);
     background-size: cover;
 }
 
+html,body {
+    height:100%;
+}
+
 h1 {
-    font-family: system-ui, sans-serif;
-    font-weight: 300px;
+    font-family: 'Cat Paw', sans-serif;
+    font-weight: normal;
+    font-size: 200px;
     color: white;
+    width: 90%;
 }
 
-.logo-overlay {
-    width: 600px;
+.logo-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
 }
 
-.logo-overlay h1 {
-    position: center;
-    background-color: white;
-    justify-content: center;
-    height: 3rem;
+.logo {
+    background-color: rgba(255, 255, 255, 10%);
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.logo img {
+    fill: white;
+    height: 1ch;
+    width: 25%;
+    text-align: center;
 }
 
 .signup-body {
-    background-color: white;
+    float: right;
+    background-color:#fafafa;
     width: 60%;
     height: 100vh;
     padding: 2rem;
+    margin: -10 -10 -10 -10;
+    display: flex; 
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .signup-body p {
@@ -39,16 +70,23 @@ h1 {
 }
 
 form {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;    
     display: flex;
     flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 10px #c1c1c1;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 48px;
+    border-radius: 8px;
 }
 
 .form-row {
     display: flex;
-    gap: 2rem;
-    margin: 1rem;
+    gap: 1rem;
+    padding: 16px;
+    justify-content: space-evenly;
 }
 
 label {
@@ -62,6 +100,7 @@ label {
 
 input {
     display: block;
+    width: 100%;
 }
 
 button {
@@ -73,7 +112,14 @@ button {
     text-transform: uppercase;
     border: none;
     border-radius: 5px;
-    padding: 2rem;
-    margin: 2rem;
+    padding: 16px;
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 50%;
     box-shadow: 5px 5px;
+}
+
+#pawprint {
+    height: 1rem;
+    display: inline;
 }
