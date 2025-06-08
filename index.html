@@ -15,47 +15,47 @@
     </div>    
     
     <div class="signup-body">
-        <div class="text-div">
-        <p class="p1">Let's stay in touch!</p>
-        <p class="p2">Enter your contact information below to keep up to date
-           on community events, discounts, and much more! We look
-           forward to getting to know you.
-        </p>
+        <div>
+            <p class="text">Let's stay in touch!</p>
+            <p class="text">Enter your contact information below to keep up to date
+            on community events, discounts, and much more! We look
+            forward to getting to know you.
+            </p>
         </div>
         <form action="results.html" method="GET">
             <div class="form-row">
                 <div class="input-div">
                     <label for="firstname">First name</label>
-                    <input type="text" id="firstname" name="firstname">
+                    <input type="text" id="firstname" name="firstname" placeholder="" required>
                 </div>
                 <div class="input-div">
                     <label for="lastname">Last name</label>
-                    <input type="text" id="lastname" name="lastname">
+                    <input type="text" id="lastname" name="lastname" placeholder="" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="input-div">
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email">
+                    <input type="email" id="email" name="email" placeholder="" required>
                 </div>
                 <div class="input-div">
                     <label for="phonenum">Phone number</label>
-                    <input type="text" id="phonenum" name="phonenum">
+                    <input type="text" id="phonenum" name="phonenum" placeholder="" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="input-div">
                     <label for="password">Password</label>
-                    <input type="text" id="password" name="password">
+                    <input type="password" id="password" title="Must be at least 8 characters." name="password" placeholder="" required>
                 </div>
                 <div class="input-div">
                     <label for="password">Confirm Password</label>
-                    <input type="text" id="password" name="password">
+                    <input type="password" id="password" name="password" title="Must be at least 8 characters." placeholder="" pattern="[a-zA-Z0-0]{8,}" required>
                 </div>
             </div>
-            
             <button>Create account</button>
         </form>
+        <p class="text">Already have an account? <a>Log in</a></p>
     </div>
 </body>
 </html>

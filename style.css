@@ -10,7 +10,8 @@ body {
 }
 
 html,body {
-    height:100%;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -33,19 +34,23 @@ h1 {
     color: white;
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 48px;
+    gap: 0px;
 }
 
 .logo h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 .logo img {
-    fill: white;
-    height: 1ch;
-    width: 25%;
+    fill: blue;
+    height: 15%;
+    width: 15%;
     text-align: center;
+    stroke-width: 1;
 }
 
 .signup-body {
@@ -53,46 +58,48 @@ h1 {
     background-color:#fafafa;
     width: 60%;
     height: 100vh;
-    padding: 2rem;
     margin: -10 -10 -10 -10;
     display: flex; 
     flex-direction: column;
     align-items: stretch;
+    margin: 0;
+    padding-top: 36px;
 }
 
-.signup-body p {
+.text {
+   padding-left: 36px;
+   padding-right: 60px;
+   max-width: 75ch; 
    font-family: system-ui, sans-serif;
-   font-size: 2rem;
-}
-
-.signup-body .p1 {
-    font-weight: 600;
+   color: #29271b;
+   font-size: 1.5rem;
 }
 
 form {
-    margin: 0 auto;    
+    margin: -5 auto;    
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     box-shadow: 0 0 10px #c1c1c1;
     width: 100%;
-    margin: 0 auto;
     padding-top: 24px;
     padding-bottom: 48px;
-    border-radius: 8px;
 }
 
 .form-row {
     display: flex;
-    gap: 1rem;
-    padding: 16px;
-    justify-content: space-evenly;
+    gap: 24px;
+    padding-left: 36px;
+    padding-bottom: 24px;
+    justify-content: flex-start;
+    gap: 36px;
 }
 
 label {
    font-family: system-ui, sans-serif;
    font-weight: 700;
-   font-size: 0.5 rem; 
+   font-size: 1rem; 
    font-kerning: normal;
    text-transform: uppercase;
    color: #6f5d51;
@@ -101,13 +108,33 @@ label {
 input {
     display: block;
     width: 100%;
+    border: 2px black solid;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 2px red solid;
+    background-image: url(images/red-x.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px);
+}
+
+
+input:valid:not(:placeholder-shown) {
+    border: 2px green solid;
+    background-image: url(images/green-check.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px);
 }
 
 button {
     background-color: #6f5d51;
     color: white;
     font-family: system-ui, sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1rem;
     text-transform: uppercase;
     border: none;
@@ -115,11 +142,6 @@ button {
     padding: 16px;
     margin: 0 auto;
     margin-top: 24px;
-    width: 50%;
+    width: 25%;
     box-shadow: 5px 5px;
-}
-
-#pawprint {
-    height: 1rem;
-    display: inline;
 }
