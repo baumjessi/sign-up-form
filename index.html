@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fake Cat Cafe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,14 +14,10 @@
             <h1>Fake Cat Cafe</h1>
         </div>
     </div>    
-    <div class="credits">
-        <p>Photo by Sarah Shull on Unsplash</p>
-        <p>Page created by Jessi B. for The Odin Project</p>
-    </div>
     </div>
     
     <div class="signup-body">
-        <div>
+        <div class="signup-text">
             <p class="text">Let's stay in touch!</p>
             <p class="text">Enter your contact information below to keep up to date
             on community events, discounts, and much more! We look
@@ -52,16 +48,22 @@
             <div class="form-row">
                 <div class="input-div">
                     <label for="password">Password</label>
-                    <input type="password" id="password" title="Must be at least 8 characters." name="password" placeholder="" required>
+                    <input type="password" id="password" name="password" title="Must be at least 8 characters." 
+                    name="password" placeholder="" pattern="[a-zA-Z0-0]{8,}" required>
                 </div>
                 <div class="input-div">
                     <label for="password">Confirm Password</label>
-                    <input type="password" id="password" name="password" title="Must be at least 8 characters." placeholder="" pattern="[a-zA-Z0-0]{8,}" required>
+                    <input type="password" id="password" name="password" title="Must be at least 8 characters." 
+                    placeholder="" pattern="[a-zA-Z0-0]{8,}" required>
                 </div>
             </div>
-            <button>Create account</button>
+            <div class="form-row">
+                <button>Create account</button>
+            </div>
+            <div class="form-row">
+                <p class="text link">Already have an account? <a href="">Log in</a></p>
+            </div>
         </form>
-        <p class="text">Already have an account? <a>Log in</a></p>
     </div>
 </body>
 </html>

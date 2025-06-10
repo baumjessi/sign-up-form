@@ -7,7 +7,7 @@ body {
     display: flex;
     background-image: url(images/cat-chemex.jpg);
     background-size: cover;
-    background-position: left-top;
+    left: -10px;
 }
 
 html,body {
@@ -45,7 +45,6 @@ h1 {
     justify-content: center;
     align-items: center;
     padding: 56px;
-    gap: 0px;
 }
 
 .logo h1 {
@@ -78,7 +77,10 @@ h1 {
     flex-direction: column;
     align-items: stretch;
     margin: 0;
-    padding-top: 36px;
+}
+
+.signup-text {
+    padding-top: 48px;
 }
 
 .text {
@@ -95,7 +97,7 @@ form {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
     background-color: white;
     box-shadow: 0 0 10px #c1c1c1;
     width: 100%;
@@ -147,17 +149,40 @@ input:valid:not(:placeholder-shown) {
 }
 
 button {
-    background-color: #6f5d51;
+    background-color: black;
     color: white;
     font-family: system-ui, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1rem;
     text-transform: uppercase;
     border: none;
     border-radius: 5px;
-    padding: 16px;
-    margin: 0 auto;
+    padding: 8px;
     margin-top: 24px;
     width: 25%;
     box-shadow: 5px 5px;
+}
+
+
+button:hover {
+    background-color: #6f5d51;  
+}
+
+a {
+    font-weight: bold;
+    color: #6f5d51;
+    text-decoration: none;
+}
+
+.link {
+    font-size: 1rem;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+a:hover {
+    color: #a18674;
 }
