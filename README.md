@@ -10,8 +10,8 @@ address. You can enter a username and password; however, password matching canno
 will be targeted in a later project!). 
 
 ## Credits
-The font used for the logo, ["Cat Paw"](https://www.dafont.com/cat-paw.font), is from DaFont.
-The cat icon used in the logo is from [SVG Repo](https://www.svgrepo.com/svg/528888/cat).
+The font used for the logo, ["Cat Paw"](https://www.dafont.com/cat-paw.font), is from DaFont.<br>
+The cat icon used in the logo is from [SVG Repo](https://www.svgrepo.com/svg/528888/cat).<br>
 The background image of the cat is by [Sarah Shull](https://unsplash.com/photos/short-furred-white-and-brown-cat-beside-clear-glass-container-YhhS7zyTcDU) on Unsplash.
 
 ## Found a bug?
