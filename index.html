@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fake Cat Cafe</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="logo-sidebar">
-    <div class="logo-container">
-        <div class="logo">
-            <img id="pawprint" src="images/cat-icon.svg">
-            <h1>Fake Cat Cafe</h1>
-        </div>
-    </div>    
-    </div>
-    
-    <div class="signup-body">
-        <div class="signup-text">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Fake Cat Cafe</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="logo-sidebar">
+         <div class="logo-container">
+            <div class="logo">
+               <img id="pawprint" src="images/cat-icon.svg">
+               <h1>Fake Cat Cafe</h1>
+            </div>
+         </div>
+      </div>
+      <div class="signup-body">
+         <div class="signup-text">
             <p class="text">Let's stay in touch!</p>
             <p class="text">Enter your contact information below to keep up to date
-            on community events, discounts, and much more! We look
-            forward to getting to know you.
+               on community events, discounts, and much more! We look
+               forward to getting to know you.
             </p>
-        </div>
-        <form action="results.html" method="GET">
+         </div>
+         <form action="results.html" method="GET">
             <div class="form-row">
-                <div class="input-div">
-                    <label for="firstname">First name</label>
-                    <input type="text" id="firstname" name="firstname" placeholder="" required>
-                </div>
-                <div class="input-div">
-                    <label for="lastname">Last name</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="" required>
-                </div>
+               <div class="input-div">
+                  <label for="firstname">First name</label>
+                  <input type="text" id="firstname" name="firstname" placeholder="" required>
+               </div>
+               <div class="input-div">
+                  <label for="lastname">Last name</label>
+                  <input type="text" id="lastname" name="lastname" placeholder="" required>
+               </div>
             </div>
             <div class="form-row">
-                <div class="input-div">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="" required>
-                </div>
-                <div class="input-div">
-                    <label for="phonenum">Phone number</label>
-                    <input type="text" id="phonenum" name="phonenum" placeholder="" required>
-                </div>
+               <div class="input-div">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="" required>
+               </div>
+               <div class="input-div">
+                  <label for="phonenum">Phone number</label>
+                  <input type="text" id="phonenum" name="phonenum" placeholder="" required>
+               </div>
             </div>
             <div class="form-row">
-                <div class="input-div">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" title="Must be at least 8 characters." 
-                    name="password" placeholder="" pattern="[a-zA-Z0-0]{8,}" required>
-                </div>
-                <div class="input-div">
-                    <label for="password">Confirm Password</label>
-                    <input type="password" id="password" name="password" title="Must be at least 8 characters." 
-                    placeholder="" pattern="[a-zA-Z0-0]{8,}" required>
-                </div>
+               <div class="input-div">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" title="Must contain at least one number and one uppercase 
+                     and lowercase letter, and at least 8 or more characters"  
+                     name="password" placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+               </div>
+               <div class="input-div">
+                  <label for="password">Confirm Password</label>
+                  <input type="password" id="password" name="password" title="Must contain at least one number and one uppercase 
+                     and lowercase letter, and at least 8 or more characters"  
+                     placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+               </div>
             </div>
             <div class="form-row">
-                <button>Create account</button>
+               <button>Create account</button>
             </div>
             <div class="form-row">
-                <p class="text link">Already have an account? <a href="">Log in</a></p>
+               <p class="link">Already have an account? <a href="">Log in</a></p>
             </div>
-        </form>
-    </div>
-</body>
+         </form>
+         <div class="credits">
+            <p>Photo created by <a href="https://unsplash.com/photos/short-furred-white-and-brown-cat-beside-clear-glass-container-YhhS7zyTcDU">
+                Sarah Shull</a> on Unsplash
+               <br>Fake form by Jessi B. for The Odin Project
+            </p>
+         </div>
+      </div>
+   </body>
 </html>
