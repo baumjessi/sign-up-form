@@ -2,7 +2,7 @@
 By Jessi B. for The Odin Project
 
 ## How to Use this Form
-Click for live link! 
+[Click for live link!](https://baumjessi.github.io/sign-up-form/)
 
 This is an HTML & CSS form validation practice project. Front-end form validation skills were the focus,
 so there is no Javascript used. On this form, you can enter your first & last name, phone number, and email
