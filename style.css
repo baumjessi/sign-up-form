@@ -2,16 +2,19 @@
     src: url(fonts/cat_paw-webfont.woff);
     font-family: 'Cat Paw';
 }
+
 body {
     display: flex;
     background-image: url(images/cat-chemex.jpg);
     background-size: cover;
     background-position: right 200px top 0px;
 }
+
 html,body {
     margin: 0;
     padding: 0;
 }
+
 h1 {
     font-family: 'Cat Paw', sans-serif;
     font-weight: normal;
@@ -19,18 +22,21 @@ h1 {
     color: white;
     width: 90%;
 }
+
 .logo-sidebar {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
+
 .logo {
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
@@ -40,6 +46,7 @@ h1 {
     align-items: center;
     padding: 56px;
 }
+
 .logo h1 {
     text-align: center;
     font-size: 3.5vw;
@@ -48,6 +55,7 @@ h1 {
     flex-grow: 1;
     flex-shrink: 1;
 }
+
 .logo img {
     fill: blue;
     height: 15%;
@@ -58,6 +66,7 @@ h1 {
     flex-shrink: 10;
     flex-grow: 1;
 }
+
 .signup-body {
     float: right;
     background-color:#fafafa;
@@ -70,9 +79,11 @@ h1 {
     margin: 0;
     min-width: 750px;
 }
+
 .signup-text {
     padding-top: 48px;
 }
+
 .text {
    padding-left: 36px;
    padding-right: 60px;
@@ -81,6 +92,7 @@ h1 {
    color: #29271b;
    font-size: 1.5rem;
 }
+
 form {
     margin: -5 auto;    
     display: flex;
@@ -94,6 +106,7 @@ form {
     padding-bottom: 48px;
     min-width: 750px;
 }
+
 .form-row {
     display: flex;
     gap: 24px;
@@ -102,6 +115,7 @@ form {
     justify-content: flex-start;
     gap: 36px;
 }
+
 label {
    font-family: system-ui, sans-serif;
    font-weight: 700;
@@ -110,6 +124,7 @@ label {
    text-transform: uppercase;
    color: #6f5d51;
 }
+
 input {
     display: block;
     width: 100%;
@@ -117,6 +132,7 @@ input {
     border-radius: 4px;
     padding: 10px;
 }
+
 input:invalid:not(:placeholder-shown) {
     border: 2px red solid;
     background-image: url(images/red-x.svg);
@@ -124,6 +140,7 @@ input:invalid:not(:placeholder-shown) {
     background-repeat: no-repeat;
     background-position: calc(100% - 10px);
 }
+
 input:valid:not(:placeholder-shown) {
     border: 2px green solid;
     background-image: url(images/green-check.svg);
@@ -131,6 +148,7 @@ input:valid:not(:placeholder-shown) {
     background-repeat: no-repeat;
     background-position: calc(100% - 10px);
 }
+
 button {
     background-color: black;
     color: white;
@@ -145,20 +163,24 @@ button {
     width: 25%;
     box-shadow: 5px 5px;
 }
+
 button:hover {
     background-color: #6f5d51;  
 }
+
 a {
     font-weight: bold;
     color: #6f5d51;
     text-decoration: none;
 }
+
 .link {
     font-size: 1rem;
     font-family: system-ui, sans-serif;
     text-align: left;
     width: 100%;
 }
+
 a:hover {
     color: #a18674;
 }
@@ -170,4 +192,5 @@ a:hover {
     display: flex;
     flex-direction: column;
     padding-top: 54px;
+    background-color: #fafafa
 }
